@@ -16,11 +16,5 @@ class NegociacaoController{
 
         let diaMesAno = `${negociacao.data.getDate()}/${(negociacao.data.getMonth()+1)}/${negociacao.data.getFullYear()}`;
         console.log(diaMesAno);
-        // let negociacao = new Negociacao(
-        //     this._inputData.value,
-        //     this._inputQuantidade.value,
-        //     this._inputValor.value
-        // )
-
     }
 }
