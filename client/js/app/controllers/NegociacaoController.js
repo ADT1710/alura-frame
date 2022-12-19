@@ -12,9 +12,8 @@ class NegociacaoController{
         let data = helper.textoParaData(this._inputData.value);
 
         let negociacao = new Negociacao(data, this._inputQuantidade.value, this._inputValor.value);
+
         console.log(negociacao);
-
         console.log(helper.dataParaTexto(negociacao.data))
-
     }
 }
