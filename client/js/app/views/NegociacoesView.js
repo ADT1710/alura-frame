@@ -13,20 +13,15 @@ class NegociacoesView{
                         <th>VOLUME</th>
                     </tr>
                     </thead>
-                
                     <tbody>
-                        ${model.negociacoes.map(n =>{
-                            return `
-                            ${console.log(n.data)}
-                            <tr>
+                        ${model.negociacoes.map(n =>
+                            `<tr>
                                 <td>${DateHelper.dataParaTexto(n.data)}</td>
                                 <td>${n.quantidade}</td>
                                 <td>${n.valor}</td>
                                 <td>${n.volume}</td>
-                            </tr>`
-                        }).join('')}
+                            </tr>`).join('')}
                     </tbody>
-                
                     <tfoot>
                     </tfoot>
                 </table>`;
